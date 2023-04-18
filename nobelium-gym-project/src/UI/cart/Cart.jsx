@@ -8,7 +8,7 @@ const Cart = ({ className, title, icon, info, path  }) => {
             <span>{icon}</span>
             <h4>{title}</h4>
             <small>{info}</small>
-            <Link to={path} className="btn sm"> Learn More <AiFillCaretRight /></Link>
+            {path && <Link to={path} className="btn sm"> Learn More <AiFillCaretRight /></Link>}
         </article>
     )
 }
