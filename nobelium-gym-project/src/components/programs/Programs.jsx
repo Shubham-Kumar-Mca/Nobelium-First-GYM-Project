@@ -41,12 +41,13 @@ const Programs = () => {
         <section className='programs'>
             <div className="container programs__container">
                 <SectionHead icon={<FaCrown />} title="Programs" />
-            </div>
-            <div className="programs__wrraper">
-                {programs.map(({ id, title, icon, info, path }) => (
-                    <Cart className="programs__program" key={id} title = {title} icon = {icon} info = {info} path = {path}/>
-                )
-                )}
+
+                <div className="programs__wrraper">
+                    {programs.map(({ id, title, icon, info, path }) => (
+                        <Cart className="programs__program" key={id} title={title} icon={icon} info={info} path={path} />
+                    )
+                    )}
+                </div>
             </div>
         </section>
     )
