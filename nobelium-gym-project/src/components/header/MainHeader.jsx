@@ -1,6 +1,6 @@
 import React from 'react';
 import images from "../../../images/main_header.png";
-import "./mainHeader.css"
+import "./mainHeader.css";
 import { Link } from 'react-router-dom';
 
 const MainHeader = () => {
