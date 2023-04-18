@@ -1,0 +1,15 @@
+.section__head{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.section__head span{
+    background-color: var(--color-gray-500);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--color-secoundary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

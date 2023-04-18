@@ -1,100 +1,27 @@
-import {SiOpenaigym} from 'react-icons/si'
-
-
-
-export const links = [
-    {
-        name: "Home",
-        path: '/'
-    },
-    {
-        name: "About",
-        path: '/about'
-    },
-    {
-        name: "Gallery",
-        path: '/gallery'
-    },
-    {
-        name: "Plans",
-        path: '/plans'
-    },
-    {
-        name: "Trainers",
-        path: '/trainers'
-    },
-    {
-        name: "Contact",
-        path: '/contact'
-    }
-]
-
-
-
-
-
-
-
-export const programs = [
-    {
-        id: 1,
-        icon: <SiOpenaigym/>,
-        title: "Program One",
-        info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/111"
-    },
-    {
-        id: 2,
-        icon: <SiOpenaigym/>,
-        title: "Program Two",
-        info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/222"
-    },
-    {
-        id: 3,
-        icon: <SiOpenaigym/>,
-        title: "Program Three",
-        info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/333"
-    },
-    {
-        id: 4,
-        icon: <SiOpenaigym/>,
-        title: "Program Four",
-        info: "This is the day that the lord has made. We will rejoice!",
-        path: "/programs/444"
-    }
-]
-
-
-
-
-
-
 
 
 export const values = [
     {
         id: 1,
-        icon: <SiOpenaigym/>,
+        icon: "SiOpenaigym",
         title: "Value One",
         desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
     },
     {
         id: 2,
-        icon: <SiOpenaigym/>,
+        icon: "SiOpenaigym",
         title: "Value Two",
         desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
     },
     {
         id: 3,
-        icon: <SiOpenaigym/>,
+        icon: "SiOpenaigym",
         title: "Value Three",
         desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
     },
     {
         id: 4,
-        icon: <SiOpenaigym/>,
+        icon: "SiOpenaigym",
         title: "Value Four",
         desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum."
     }
@@ -199,19 +126,19 @@ export const plans = [
         desc: 'This package is perfect for beginners who need constant help',
         price: 29.99,
         features: [
-            {feature: 'First Feature', available: true},
-            {feature: 'Second Feature', available: true},
-            {feature: 'Third Feature', available: true},
-            {feature: 'Fourth Feature', available: true},
-            {feature: 'Fifth Feature', available: true},
-            {feature: 'Fifth Feature Plus', available: false},
-            {feature: 'Sixth Feature', available: false},
-            {feature: 'Seventh Feature', available: false},
-            {feature: 'Seventh Feature Plus', available: false},
-            {feature: 'Eighth Feature', available: false},
-            {feature: 'Ninth Feature', available: false},
-            {feature: 'Tenth Feature', available: false},
-            {feature: 'Eleventh Feature', available: false}
+            { feature: 'First Feature', available: true },
+            { feature: 'Second Feature', available: true },
+            { feature: 'Third Feature', available: true },
+            { feature: 'Fourth Feature', available: true },
+            { feature: 'Fifth Feature', available: true },
+            { feature: 'Fifth Feature Plus', available: false },
+            { feature: 'Sixth Feature', available: false },
+            { feature: 'Seventh Feature', available: false },
+            { feature: 'Seventh Feature Plus', available: false },
+            { feature: 'Eighth Feature', available: false },
+            { feature: 'Ninth Feature', available: false },
+            { feature: 'Tenth Feature', available: false },
+            { feature: 'Eleventh Feature', available: false }
         ]
     },
     {
@@ -220,19 +147,19 @@ export const plans = [
         desc: 'This is the perfect package for beginners who know what their doing',
         price: 49.99,
         features: [
-            {feature: 'First Feature', available: true},
-            {feature: 'Second Feature', available: true},
-            {feature: 'Third Feature', available: true},
-            {feature: 'Fourth Feature', available: true},
-            {feature: 'Fifth Feature', available: true},
-            {feature: 'Fifth Feature Plus', available: true},
-            {feature: 'Sixth Feature', available: true},
-            {feature: 'Seventh Feature', available: true},
-            {feature: 'Seventh Feature Plus', available: true},
-            {feature: 'Eighth Feature', available: false},
-            {feature: 'Ninth Feature', available: false},
-            {feature: 'Tenth Feature', available: false},
-            {feature: 'Eleventh Feature', available: false}
+            { feature: 'First Feature', available: true },
+            { feature: 'Second Feature', available: true },
+            { feature: 'Third Feature', available: true },
+            { feature: 'Fourth Feature', available: true },
+            { feature: 'Fifth Feature', available: true },
+            { feature: 'Fifth Feature Plus', available: true },
+            { feature: 'Sixth Feature', available: true },
+            { feature: 'Seventh Feature', available: true },
+            { feature: 'Seventh Feature Plus', available: true },
+            { feature: 'Eighth Feature', available: false },
+            { feature: 'Ninth Feature', available: false },
+            { feature: 'Tenth Feature', available: false },
+            { feature: 'Eleventh Feature', available: false }
         ]
     },
     {
@@ -241,19 +168,19 @@ export const plans = [
         desc: 'This package is perfect for busy people who need home service',
         price: 89.99,
         features: [
-            {feature: 'First Feature', available: true},
-            {feature: 'Second Feature', available: true},
-            {feature: 'Third Feature', available: true},
-            {feature: 'Fourth Feature', available: true},
-            {feature: 'Fifth Feature', available: true},
-            {feature: 'Fifth Feature Plus', available: true},
-            {feature: 'Sixth Feature', available: true},
-            {feature: 'Seventh Feature', available: true},
-            {feature: 'Seventh Feature Plus', available: true},
-            {feature: 'Eighth Feature', available: true},
-            {feature: 'Ninth Feature', available: true},
-            {feature: 'Tenth Feature', available: true},
-            {feature: 'Eleventh Feature', available: true}
+            { feature: 'First Feature', available: true },
+            { feature: 'Second Feature', available: true },
+            { feature: 'Third Feature', available: true },
+            { feature: 'Fourth Feature', available: true },
+            { feature: 'Fifth Feature', available: true },
+            { feature: 'Fifth Feature Plus', available: true },
+            { feature: 'Sixth Feature', available: true },
+            { feature: 'Seventh Feature', available: true },
+            { feature: 'Seventh Feature Plus', available: true },
+            { feature: 'Eighth Feature', available: true },
+            { feature: 'Ninth Feature', available: true },
+            { feature: 'Tenth Feature', available: true },
+            { feature: 'Eleventh Feature', available: true }
         ]
     }
 ]
