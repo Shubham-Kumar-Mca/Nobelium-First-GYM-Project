@@ -1,8 +1,9 @@
 .main__header{
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 3rem);
     display: flex;
     place-items: center;
+    margin-top: 3rem;
 }
 .main__header-container{
     height: 100%;
@@ -49,4 +50,36 @@
 }
 .main__header-right:hover .main__header-circle{
     filter: blur(15px);
+}
+
+
+/*MEDIA QUERIES (medium screens)*/
+@media screen and (max-width : 1024px){
+    .main__header{
+        height: fit-content;
+        padding: 12rem 0;
+    }
+    .main__header-container{
+        gap: 0;
+    }
+    .main__header-circle{
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+
+/*MEDIA QUERIES (small screens)*/
+@media screen and (max-width : 600px){
+    .main__header{
+        margin-top: 0;
+        padding: 12rem 0 0;
+        height: 100vh;
+    }
+    .main__header-image, .main__header-circle{
+        display: none;
+    }
+    .main__header-container{
+        grid-template-columns: 1fr;
+    }
 }
