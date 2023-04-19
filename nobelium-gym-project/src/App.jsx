@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 import Register from "./pages/Register/Register";
 import Login from "./pages/login/Login";
 import PrivateRoute from "./components/PrivateRoute"
+import AllTrainer from "./components/trainer/AllTrainer";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/register" element = {<Register />}/>
         <Route path="/plans" element = {<Plans />}/>
         <Route path="/login" element = {<Login />}/>
+        <Route path="/trainerall" element = {<AllTrainer />}/>
         <Route path="*" element = {<NotFound />}/>
       </Routes>
       <Footer />
