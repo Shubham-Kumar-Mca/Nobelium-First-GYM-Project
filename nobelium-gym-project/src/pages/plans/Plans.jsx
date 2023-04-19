@@ -1,8 +1,7 @@
 import React from 'react';
 import HeaderImage from "../../../images/header_bg_4.jpg"
-import "./plans.css"
+import "./plans.css";
 import Header from '../../components/header/Header';
-import Cart from '../../UI/cart/Cart';
 
 const Plans = () => {
   const plans = [
