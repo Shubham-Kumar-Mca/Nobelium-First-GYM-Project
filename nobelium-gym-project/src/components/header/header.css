@@ -42,7 +42,7 @@
 
 
 
-/*MEDIA QUERIES (medium screens)*/
+/*MEDIA QUERIES (medium screens) */
 @media screen and (max-width : 1024px) {
     .header__content {
         width: 76%;
