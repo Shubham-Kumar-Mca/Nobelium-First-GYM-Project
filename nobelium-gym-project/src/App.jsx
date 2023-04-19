@@ -8,7 +8,7 @@ import NotFound from "./pages/notFound/NotFound";
 import Footer from "./components/footer/Footer";
 import Register from "./pages/Register/Register";
 import Login from "./pages/login/Login";
-import PrivateRoute from "./components/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute"
 
 function App() {
 
