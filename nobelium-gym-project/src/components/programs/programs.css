@@ -28,7 +28,7 @@ section{
 }
 
 
-/*MEDIA QUERIES (small screens)*/
+/*MEDIA QUERIES (small screens) */
 @media screen and (max-width : 600px){
     .programs__wrraper{
         grid-template-columns: 1fr;
