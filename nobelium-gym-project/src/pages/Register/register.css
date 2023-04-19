@@ -1,0 +1,46 @@
+.w{
+    width: 30rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+.w form  div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+.w form  div label{
+    margin-bottom: .5rem;
+    text-align: left;
+}
+.w form  div input{
+    padding: 10px;
+    border: 1px solid #333;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.w form  input[type="submit"]{
+    width: 100%;
+    padding: 0.9rem 2rem;
+    font-size: 16px;
+    border: none;
+    background: var(--color-primary);
+    color: var(--color-gray-100);
+    border-radius: 1.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.w form input[type="submit"]:hover{
+    background: var(--color-secoundary);
+    color: var(--color-gray-600);
+}
+.w .pTag{
+    color: red;
+    text-align: left;
+
+}
+
