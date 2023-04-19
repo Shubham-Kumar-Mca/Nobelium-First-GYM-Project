@@ -1,0 +1,51 @@
+.about{
+
+    /* border:1px solid black; */
+    margin:50px;
+}
+
+
+.aboutUs{
+    display:flex;
+    margin:15px;
+    align-items: center;
+    /* border:1px solid; */
+
+}
+
+.aboutUsVid{
+
+    /* margin-right:100px; */
+    flex:1
+
+}
+
+.aboutUsText{
+
+    /* border:1px solid black; */
+    flex:2;
+    margin-left: 100px;
+    /* padding:50px; */
+    font-size: 14px;
+}
+
+.whyUsText{
+
+    /* border:1px solid black; */
+    flex:2;
+    margin-right: 100px;
+    /* padding:50px; */
+    font-size: 14px;
+}
+
+.whyUsText li{
+    color:red;
+    font-size:30px;
+}
+
+.whyUsText span{
+    color:black;
+    font-size:14px;
+}
+
+
