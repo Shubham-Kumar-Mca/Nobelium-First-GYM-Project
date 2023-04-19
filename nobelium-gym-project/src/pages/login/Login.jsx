@@ -60,7 +60,7 @@ const Login = () => {
     }
 
     if(!isValid){
-      setUserLogin({ ...userLogin, errors })
+      setUserLogin({ ...userLogin, errors });
     }
 
   };
