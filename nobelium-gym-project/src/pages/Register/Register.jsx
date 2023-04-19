@@ -27,7 +27,7 @@ const Register = () => {
 
   const insertUserUser = (newUser) =>{
     users.push(newUser)
-    localStorage.setItem("RegisterData", JSON.stringify(users))
+    localStorage.setItem("RegisterData", JSON.stringify(users));
     // setUsers([...users, newUser])
     navigate("/login")
   }
