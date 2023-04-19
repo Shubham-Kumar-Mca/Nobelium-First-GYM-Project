@@ -31,6 +31,7 @@ const AboutUs = () => {
           opts={opts}
           onReady={onReady}
         />
+        {/* <div className={styles.container}></div> */}
         <div className={styles.aboutUsText}>
           <h1>About Us</h1>
           <p>
@@ -42,7 +43,7 @@ const AboutUs = () => {
           <Button buttonText="Learn More" />
         </div>
       </div>
-      <div className={styles.aboutUs}>
+      <div className={styles.whyUs}>
         <div className={styles.whyUsText}>
           <h1>Why Us</h1>
           <ul>
