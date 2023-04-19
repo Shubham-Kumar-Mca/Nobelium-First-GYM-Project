@@ -3,7 +3,7 @@ import { Link, NavLink, json } from 'react-router-dom';
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineCancel } from "react-icons/md";
 import Logo from "../../../images/logo.png";
-import "./navbar.css";
+import "./navbar.css"
 
 const Navbar = () => {
     const links = [
