@@ -1,7 +1,6 @@
 .main__header{
     width: 100vw;
     height: calc(100vh - 3rem);
-    /* height: 100vh; */
     display: flex;
     place-items: center;
     margin-top: 7rem;
@@ -42,7 +41,6 @@
     background: linear-gradient(75deg, var(--color-secoundary), transparent);
     border-radius: 50%;
     position: absolute;
-    /* filter: blur(15px); */
     transition: var(--transition);
 }
 
