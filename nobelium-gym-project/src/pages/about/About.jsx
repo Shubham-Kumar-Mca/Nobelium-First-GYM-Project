@@ -25,7 +25,10 @@ const About = () => {
   }
 
   return (
-    <Header title="About Us" image={HeaderImage}>
+    <>
+      <Header title="About Us" image={HeaderImage}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptates?
+      </Header>
       <div className={styles.about}>
         <div className={styles.aboutUs}>
           <YouTube
@@ -36,7 +39,7 @@ const About = () => {
           />
           {/* <div className={styles.container}></div> */}
           <div className={styles.aboutUsText}>
-            <h1>About Us</h1>
+            <p className={styles.aboutTitle}>About Us</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate aut exercitationem architecto minima soluta ab eligendi
@@ -78,7 +81,7 @@ const About = () => {
           />
         </div>
       </div>
-    </Header>
+    </>
   );
 };
 

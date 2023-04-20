@@ -45,7 +45,12 @@
     font-size:14px;
 }
 
+.aboutTitle{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 600;
 
+}
 /* media queries */
 
 @media only screen and (max-width:768px){
