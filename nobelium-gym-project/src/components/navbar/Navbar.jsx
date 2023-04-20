@@ -3,7 +3,7 @@ import { Link, NavLink, json } from 'react-router-dom';
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineCancel } from "react-icons/md";
 import Logo from "../../../images/logo.png";
-import "./navbar.css"
+import "./navbar.css";
 
 const Navbar = () => {
     const links = [
@@ -45,7 +45,7 @@ const Navbar = () => {
                     {
                         links.map(({ name, path }, index) => (
                             <li key={index}>
-                                <NavLink to={!isAuth ? path : path==="/register" ? null : path}  className={({ isActive }) => isActive ? "active-nav" : ""} onClick={() => handelAuthChange(!isAuth ? name : name === "Login" ? "Logout" : name)}>{!isAuth ? name : name === "Login" ? "Logout" : name !== "Register" ? name : <small>Welcom {greetigWithName}</small>}</NavLink>
+                                <NavLink to={!isAuth ? path : path==="/register" ? "" : path}  className={({ isActive }) => isActive ? "active-nav" : ""} onClick={() => handelAuthChange(!isAuth ? name : name === "Login" ? "Logout" : name)}>{!isAuth ? name : name === "Login" ? "Logout" : name !== "Register" ? name : <small>Welcom {greetigWithName}</small>}</NavLink>
                             </li>
                         ))
                     }
