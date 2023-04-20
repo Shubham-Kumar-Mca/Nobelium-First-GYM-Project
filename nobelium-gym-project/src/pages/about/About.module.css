@@ -1,0 +1,103 @@
+.about{
+
+    margin:50px;
+}
+
+
+.aboutUs{
+    display:flex;
+    margin:15px;
+    align-items: center;
+
+}
+
+.aboutUsVid{
+    flex:1;
+    
+
+}
+
+.aboutUsText{
+    flex:2;
+    margin-left: 100px;
+    font-size: 14px;
+}
+
+
+.whyUs{
+    composes:aboutUs;
+}
+
+.whyUsText{
+
+    flex:2;
+    margin-right: 100px;
+    font-size: 14px;
+}
+
+.whyUsText li{
+    color:red;
+    font-size:30px;
+}
+
+.whyUsText span{
+    color:black;
+    font-size:14px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width:768px){
+
+    .about{
+
+        margin:10px;
+    }
+
+    .aboutUs{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin:15px;
+        width:100%;
+    
+    }
+
+    .aboutUsVid{
+        height:fit-content;
+        width: fit-content;        
+    }
+
+    .aboutUsText{
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        font-size: 14px;
+        
+    }
+
+    .whyUs{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items:center;
+
+    }
+
+    
+    .whyUsText{
+    
+        margin-right: 0px;
+        font-size: 14px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+
+}
+
+
