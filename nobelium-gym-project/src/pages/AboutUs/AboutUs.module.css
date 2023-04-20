@@ -1,6 +1,5 @@
 .about{
 
-    /* border:1px solid black; */
     margin:50px;
 }
 
@@ -9,26 +8,18 @@
     display:flex;
     margin:15px;
     align-items: center;
-    /* border:1px solid; */
 
 }
 
 .aboutUsVid{
-
-    /* margin-right:100px; */
     flex:1;
-    /* height: 250px;
-    width: 400px; */
-    /* border:1px solid; */
+    
 
 }
 
 .aboutUsText{
-
-    /* border:1px solid black; */
     flex:2;
     margin-left: 100px;
-    /* padding:50px; */
     font-size: 14px;
 }
 
@@ -39,10 +30,8 @@
 
 .whyUsText{
 
-    /* border:1px solid black; */
     flex:2;
     margin-right: 100px;
-    /* padding:50px; */
     font-size: 14px;
 }
 
@@ -63,39 +52,29 @@
 
     .about{
 
-        /* border:1px solid black; */
         margin:10px;
-        
-        /* justify-content: center; */
     }
 
     .aboutUs{
         display:flex;
         flex-direction: column;
         align-items:center;
-        /* justify-content: left; */
         margin:15px;
-        /* border:1px solid; */
         width:100%;
     
     }
 
     .aboutUsVid{
         height:fit-content;
-        width: fit-content;
-        /* border:1px solid; */
-        
+        width: fit-content;        
     }
 
     .aboutUsText{
 
-        /* border:1px solid black; */
         display:flex;
         flex-direction: column;
         align-items: center;
-        /* flex:2; */
         margin-left: 0px;
-        /* padding:50px; */
         font-size: 14px;
         
     }
@@ -104,17 +83,13 @@
         display:flex;
         flex-direction: column-reverse;
         align-items:center;
-        /* border:1px solid; */
 
     }
 
     
     .whyUsText{
     
-        /* border:1px solid black; */
-        /* flex:2; */
         margin-right: 0px;
-        /* padding:50px; */
         font-size: 14px;
         display:flex;
         flex-direction: column;
