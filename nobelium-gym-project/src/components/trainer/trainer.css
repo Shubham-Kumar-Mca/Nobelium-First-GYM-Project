@@ -61,3 +61,35 @@
     border-color: var(--color-primary-variant);
     background-color: var(--color-secoundary);
 }
+
+
+
+
+/*MEDIA QUERIES (medium screens)*/
+@media screen and (max-width : 1024px){
+    .trainers__wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .mt{
+        grid-template-columns: repeat(2,1fr)
+    }
+    .ma {
+        justify-content: center;
+    }
+    
+}
+
+
+/*MEDIA QUERIES (small screens)*/
+@media screen and (max-width : 600px){
+    .trainers__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .mt{
+        grid-template-columns: 1fr;
+    }
+    .ma {
+        justify-content: center;
+    }
+    
+}
