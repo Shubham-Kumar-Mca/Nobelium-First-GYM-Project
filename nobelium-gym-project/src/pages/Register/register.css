@@ -43,3 +43,11 @@
     text-align: left;
 }
 
+
+
+/*MEDIA QUERIES (small screens)*/
+@media screen and (max-width : 600px){
+    .w{
+        width: 20rem;
+    }
+}

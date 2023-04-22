@@ -54,20 +54,7 @@ nav{
     margin-top: 0.9rem;
 } 
 
-/* .active-nav{
-    position: relative;
-}
-.active-nav::after{
-    content: "";
-    display: block;
-    background-color: rgb(104, 104, 235);
-    width: 1.2rem;
-    height: 1.2rem;
-    position: absolute;
-    margin-top: 0.9rem;
-    transform: rotate(40deg);
-    left: calc(60% - 0.6rem);
-} */
+
 
 /*MEDIA QUERIES (mediuum and small screens)*/
 @media screen and (max-width : 1024px){

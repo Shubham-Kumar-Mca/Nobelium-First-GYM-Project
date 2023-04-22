@@ -1,7 +1,12 @@
 .button{
     background-color: rgb(255, 0, 0);
     color:white;
-    padding:15px;
     border-radius: 10px;
     border:none;
+    margin-top: .8rem;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+
 }
+

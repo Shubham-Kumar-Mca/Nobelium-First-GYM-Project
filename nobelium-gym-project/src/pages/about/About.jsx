@@ -40,34 +40,40 @@ const About = () => {
           {/* <div className={styles.container}></div> */}
           <div className={styles.aboutUsText}>
             <p className={styles.aboutTitle}>About Us</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate aut exercitationem architecto minima soluta ab eligendi
-              ipsam ratione eos voluptas explicabo accusantium voluptatem illum
-              corporis tempore, expedita excepturi rerum saepe.
-            </p>
+            <span className={styles.textColor}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate aut exercitationem architecto minima soluta ab eligendi
+                ipsam ratione eos voluptas explicabo accusantium voluptatem illum
+                corporis tempore, expedita excepturi rerum saepe.
+              </p>
+            </span>
             <Button buttonText="Learn More" />
           </div>
         </div>
         <div className={styles.whyUs}>
           <div className={styles.whyUsText}>
-            <h1>Why Us</h1>
+            <p className={styles.aboutTitle}>Why Us</p>
             <ul>
               <li>
-                <span>
-                  <h2>Consultation with experts</h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem voluptas dolorum mollitia? Doloremque, ipsum
-                  reiciendis!
+                <span className={styles.textColor}>
+                  <h2>👉 Consultation with experts</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem voluptas dolorum mollitia? Doloremque, ipsum
+                    reiciendis!
+                  </p>
                 </span>
               </li>
               <li>
-                <span>
-                  <h2>Best workout facilities</h2>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Laboriosam obcaecati amet totam officia voluptatum similique
-                  fugit harum pariatur sapiente quia delectus tempora asperiores
-                  commodi, quis quos facere, veniam quisquam dicta?
+                <span className={styles.textColor}>
+                  <h2>👉 Best workout facilities</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Laboriosam obcaecati amet totam officia voluptatum similique
+                    fugit harum pariatur sapiente quia delectus tempora asperiores
+                    commodi, quis quos facere, veniam quisquam dicta?
+                  </p>
                 </span>
               </li>
             </ul>

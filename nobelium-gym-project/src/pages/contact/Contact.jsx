@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="contact__wrapper">
             <Link to="mailto:krshubhamjaiswal2000@gmail.com" target='_blank'><MdEmail /></Link>
             <Link to="https://www.messenger.com/" target='_blank'><BsMessenger /></Link>
-            <Link to="https://web.whatsapp.com/" target='_blank'><MdEmail /></Link>
+            <Link to="https://web.whatsapp.com/" target='_blank'><IoLogoWhatsapp /></Link>
           </div>
         </div>
       </section>

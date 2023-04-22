@@ -71,7 +71,7 @@ const Plans = () => {
   ]
   return (
     <>
-      <Header title="Membersgip Plans" image={HeaderImage}>
+      <Header title="Membership Plans" image={HeaderImage}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat pariatur dolorum voluptas sequi qui commodi dolores.
       </Header>
       <section className='plans'>

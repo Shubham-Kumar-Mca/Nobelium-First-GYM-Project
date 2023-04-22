@@ -10,6 +10,10 @@
     align-items: center;
 
 }
+.textColor p{
+    color: white;
+    margin-bottom: 2rem;
+}
 
 .aboutUsVid{
     flex:1;
@@ -57,7 +61,7 @@
 
     .about{
 
-        margin:10px;
+        margin-left:15px;
     }
 
     .aboutUs{
@@ -106,3 +110,8 @@
 }
 
 
+@media only screen and (max-width:768px){
+    .aboutUs iframe{
+        width: 100%;
+    }
+}

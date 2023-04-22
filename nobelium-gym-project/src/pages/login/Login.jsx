@@ -70,7 +70,7 @@ const Login = () => {
       <form onSubmit={handelSubmit}>
         <div>
           <label>Your Email</label>
-          <input type="text" placeholder="Enter email..." name="email" value={userLogin.email} onChange={handelInputChange} />
+          <input type="email" placeholder="Enter email..." name="email" value={userLogin.email} onChange={handelInputChange} />
           {userLogin.errors.email && <p className="pTag">{userLogin.errors.email}</p>}
         </div>
         <div>

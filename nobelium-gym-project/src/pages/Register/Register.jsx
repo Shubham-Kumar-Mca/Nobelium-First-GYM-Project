@@ -80,13 +80,13 @@ const Register = () => {
 
         <div>
           <label>Email</label>
-          <input type="text" autoComplete='off' placeholder="Enter Email..." name="email" value={userSignup.email} onChange={handelInputChange} />
+          <input type="email" autoComplete='off' placeholder="Enter Email..." name="email" value={userSignup.email} onChange={handelInputChange} />
           {userSignup.errors.email && <p className="pTag">{userSignup.errors.email}</p>}
         </div>
 
         <div>
           <label>Create Password</label>
-          <input type="text" autoComplete='off' placeholder="Enter Password..." name="password" value={userSignup.password} onChange={handelInputChange} />
+          <input type="password" autoComplete='off' placeholder="Enter Password..." name="password" value={userSignup.password} onChange={handelInputChange} />
           {userSignup.errors.password && <p className="pTag">{userSignup.errors.password}</p>}
         </div>
 
