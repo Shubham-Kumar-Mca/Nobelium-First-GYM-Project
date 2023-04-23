@@ -67,8 +67,8 @@ const Navbar = () => {
                     <li><NavLink to="/about" className={({ isActive }) => isActive ? "active-nav" : ""}>About</NavLink></li>
                     <li><NavLink to="/plans" className={({ isActive }) => isActive ? "active-nav" : ""}>Plans</NavLink></li>
                     <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active-nav" : ""}>Contact</NavLink></li>
-                    <li>{auth ? <span style={{ color: "var(--color-gray-100", cursor : "pointer" }} >Welcome {greetigWithName}</span>: <NavLink to="/register" className={({ isActive }) => isActive ? "active-nav" : ""}>Register</NavLink>}</li>
-                    <li>{auth ? <p style={{ color: "var(--color-gray-100", cursor : "pointer" }} onClick={handelLogoutClicking} >Logout</p> : <NavLink to="/login" className={({ isActive }) => isActive ? "active-nav" : ""}>Login</NavLink>}</li>
+                    <li>{auth ? <span className='nav__a' style={{ color: "var(--color-gray-100", cursor : "pointer" }} >Welcome {greetigWithName}</span>: <NavLink to="/register" className={({ isActive }) => isActive ? "active-nav" : ""}>Register</NavLink>}</li>
+                    <li>{auth ? <p className='nav__a' style={{ color: "var(--color-gray-100", cursor : "pointer" }} onClick={handelLogoutClicking} >Logout</p> : <NavLink to="/login" className={({ isActive }) => isActive ? "active-nav" : ""}>Login</NavLink>}</li>
                 </ul>
                 <button className="nav__toggle-btn" onClick={() => setIsNavShowing(prev => !prev)}>
                     {
