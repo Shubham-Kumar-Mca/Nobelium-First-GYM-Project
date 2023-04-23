@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import "./login.css"
+import { AuthContext } from '../../context/AuthContextProvider';
 
 const initialState = {
   email: '',
@@ -13,9 +14,8 @@ const initialState = {
 
 const Login = () => {
   const [userLogin, setUserLogin] = useState(initialState);
-  const usersFromLS = JSON.parse(localStorage.getItem("RegisterData")) || []
+  const { userData, setUserData } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log("user is", usersFromLS);
 
   const handelInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,7 +28,6 @@ const Login = () => {
     const errors = {};
 
     if (!userLogin.email) {
-      console.log("Email is empty");
       errors.email = 'Please Enter Email Id';
       isValid = false;
     }
@@ -40,7 +39,7 @@ const Login = () => {
       errors.password = 'Password must be at least 8 characters.';
       isValid = false;
     }else {
-      const checkingVali = usersFromLS.find(user => user.email === userLogin.email);
+      const checkingVali = userData.find(user => user.email === userLogin.email);
       if (!checkingVali) {
         alert("Email and password do not match. Please sign up first!");
         navigate("/register");
@@ -53,7 +52,14 @@ const Login = () => {
           isValid = false;
         }
       }else{
-        localStorage.setItem("userAuthentication", JSON.stringify({id : checkingVali.id, isAuth : true, fullName : checkingVali.fullName}))
+        const updatedAuth = userData.map((user, i)=> {
+          if(user.id === checkingVali.id){
+            return {...user, isAuth : true}
+          }else{
+            return user
+          }
+        })
+        setUserData(updatedAuth)
         alert("Login Sucessfull!");
         navigate("/");
       }
@@ -64,6 +70,8 @@ const Login = () => {
     }
 
   };
+
+
 
   return (
     <div className="cart w">
