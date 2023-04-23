@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import "./register.css"
 import { useNavigate } from 'react-router-dom';
 import { nanoid } from 'nanoid'
+import { AuthContext } from '../../context/AuthContextProvider';
 
 const initialState = {
   fullName: '',
@@ -16,9 +17,9 @@ const initialState = {
 
 const Register = () => {
   const [userSignup, setUserSignUp] = useState(initialState);
+  const { handelUserData } = useContext(AuthContext)
   const navigate = useNavigate();
 
-  const users = JSON.parse(localStorage.getItem("RegisterData")) || []
 
   const handelInputChange = (e) => {
     const { name, value } = e.target;
@@ -26,9 +27,7 @@ const Register = () => {
   };
 
   const insertUserUser = (newUser) =>{
-    users.push(newUser)
-    localStorage.setItem("RegisterData", JSON.stringify(users));
-    // setUsers([...users, newUser])
+    handelUserData(newUser)
     navigate("/login")
   }
 
