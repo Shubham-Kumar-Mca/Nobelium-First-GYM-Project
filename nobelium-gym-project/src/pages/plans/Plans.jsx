@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import HeaderImage from "../../../images/header_bg_4.jpg"
 import "./plans.css";
 import Header from '../../components/header/Header';
+import { AuthContext } from '../../context/AuthContextProvider';
+import { useNavigate } from 'react-router-dom';
 
 const Plans = () => {
   const plans = [
@@ -69,6 +71,18 @@ const Plans = () => {
       ]
     }
   ]
+  const { userData } = useContext(AuthContext)
+  const navigate = useNavigate();
+
+  const handelChoosePlan = (name) =>{
+    const currUser = userData.find(ele=>ele.isAuth === true);
+    if(currUser === undefined){
+      alert("Please Login First");
+      navigate("/login")
+    }else{
+      alert(`Thank you for choosing ${name}`);
+    }
+  }
   return (
     <>
       <Header title="Membership Plans" image={HeaderImage}>
@@ -87,7 +101,7 @@ const Plans = () => {
                     <p key={index} className={!available ? 'disabled' : ''}>{feature}</p>
                   ))
                 }
-                <button className='btn lg'>Choose Plan</button>
+                <button className='btn lg' onClick={()=>handelChoosePlan(name)}>Choose Plan</button>
               </div>
             ))
           }
